@@ -1,25 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Formlogin from './forms/formlogin';
+import Formregister from './forms/register';
+import Todo from './to-do-app/todo';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <>
+<Formlogin/>
+<Formregister/>
+<Todo/>
+  </>;
 }
 
 export default App;
